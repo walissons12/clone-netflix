@@ -1,7 +1,14 @@
 :root{
-    --vermelho:#E50914;
+    --vermelho:#FF0100;
     --preto:#141414;
 }
+
+@font-face {
+    font-family: 'Netflix Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Netflix Sans Regular'), url('NetflixSansRegular.woff') format('woff');
+    }
 
 body{
     background: var(--preto);
@@ -18,14 +25,17 @@ body{
 header .container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
+    /* margin-right: 10px; */
 }
 
 header .logo{
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    font-family: 'Netflix Sans Regular', Times;
     font-size: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
 } 
 
 header nav a{
@@ -41,17 +51,25 @@ header nav a:hover{
 /* Main MOVIE */
 
 .tittle{
-    margin-top: 15%;
+    /* margin-top: %; */
     font-size: 60px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 10px;
 
 }
 
 .description{
     margin-top: 15px;
     margin-bottom: 50px;
+    /* text-align: left; */
+    /* width: 300px; */
+    margin-left: 50px;
+}
 
-
+.filme-principal div{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    margin-bottom: 10px;
 }
 
 .button{
@@ -81,7 +99,7 @@ header nav a:hover{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/poster-house.jpg);
     background-image: url(../img/foto-poster2.jpeg);
-    height: 400px;
+    height: 800px;
     background-size: cover;
 
     display: flex;
@@ -103,6 +121,17 @@ header nav a:hover{
 .carrosel-filmes{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.botao-entrar{
+    background: #E50914;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Netflix Sans Regular";
+    font-size: 20px;
+    margin: 10px;
+
 }
 
 
